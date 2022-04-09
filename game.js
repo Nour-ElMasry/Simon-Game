@@ -23,6 +23,7 @@ function checkAnswer(currentLevel) {
         if (gamePattern.length === playerChoice.length) {
             setTimeout(function() {
                 nextSequance();
+                $("#score").text(level - 1);
             }, 1000);
         }
     } else {

@@ -21,6 +21,13 @@ body {
     color: #FEF2BF;
 }
 
+.highestScore {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    margin: 5%;
+    color: #FEF2BF;
+}
+
 .startGame {
     display: none;
     margin: 0 auto;
