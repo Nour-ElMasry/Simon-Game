@@ -14,7 +14,6 @@ $(".btn").click(function() {
     playerChoice.push($(this).attr("id"));
 
     checkAnswer(playerChoice.length - 1);
-    playSound($(this).attr("id"));
     animation("#" + $(this).attr("id"), "pressed");
 });
 
@@ -30,7 +29,6 @@ function checkAnswer(currentLevel) {
         $("#level-title").text("Game Over, Press Restart");
         $("#startBtn").addClass("visible");
         $("#startBtn").text("Restart");
-        playSound("wrong");
         animation("body", "game-over");
         startOver();
     }
@@ -44,14 +42,7 @@ function nextSequance() {
     var randColor = Math.round(Math.random() * 3);
     gamePattern.push(boxes[randColor]);
 
-
     $("#" + boxes[randColor]).fadeOut(100).fadeIn(100);
-    playSound(boxes[randColor]);
-}
-
-function playSound(song) {
-    var song = new Audio("sounds/" + song + ".mp3");
-    song.play();
 }
 
 function animation(component, className) {
