@@ -2,11 +2,9 @@ var boxes = ["green", "red", "yellow", "blue"];
 var gamePattern = [];
 var playerChoice = [];
 var level = 0;
-var flag = false;
 
 $("#startBtn").click(function(event) {
     nextSequance();
-    flag = true;
     $(this).removeClass("visible");
 });
 
@@ -55,5 +53,4 @@ function animation(component, className) {
 function startOver() {
     gamePattern = [];
     level = 0;
-    flag = false;
 }
