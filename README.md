@@ -3,6 +3,8 @@ Welcome to the Simon Game! This is a fun and challenging game that tests your me
 
 In the game, you will be presented with a sequence of colors and you need to follow it by pressing the corresponding buttons. Each time you complete a sequence correctly, you will level up and the game will get progressively harder.
 
+You can access the website live on Heroku at the following link: https://tourmaline-selkie-6683c6.netlify.app
+
 # Technologies Used
   - HTML
   - CSS
